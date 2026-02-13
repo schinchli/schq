@@ -472,6 +472,55 @@ a.badge-item:hover {
   transform: translateY(-2px);
 }
 
+.video-thumb-link {
+  display: block;
+  text-decoration: none;
+}
+
+.video-thumb {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.video-card:hover .video-thumb img {
+  transform: scale(1.03);
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.video-play-btn i {
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 3px;
+}
+
+.video-card:hover .video-play-btn {
+  background: var(--sc-primary);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 .video-embed {
   position: relative;
   padding-bottom: 56.25%;
