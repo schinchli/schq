@@ -4,14 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shashank Chinchli | Cloud Architect &amp; AWS Community Leader</title>
-  <meta name="description" content="Shashank Chinchli — 14+ years in cloud architecture, 13 AWS certifications, AWS Golden Jacket awardee. Senior Solutions Architect at GitLab, former AWS Solutions Architect & Technical Trainer.">
-  <meta name="keywords" content="Shashank Chinchli, AWS Solutions Architect, cloud security, AWS certifications, GitLab, AWS community, Amazon Bedrock, AWS Security Lake, Golden Jacket">
+  <meta name="description" content="Shashank Chinchli — Senior Solutions Architect at GitLab with 14+ years in cloud architecture, 13 AWS certifications and the AWS Golden Jacket. Former AWS Solutions Architect & Champion Technical Trainer specialising in cloud security, generative AI and DevSecOps.">
+  <meta name="keywords" content="Shashank Chinchli, AWS Solutions Architect, cloud security, AWS certifications, GitLab Solutions Architect, AWS community leader, Amazon Bedrock, AWS Security Lake, AWS Golden Jacket, generative AI, DevSecOps, cloud architect India">
   <meta name="author" content="Shashank Chinchli">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="color-scheme" content="dark light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://schinchli.github.io/shashank-chinchli-portfolio/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Shashank Chinchli | Cloud Architect & AWS Community Leader">
-  <meta property="og:description" content="13+ years in cloud architecture. 31 cloud certifications & badges. AWS Golden Jacket awardee.">
-  <meta property="og:type" content="website">
+  <meta property="og:description" content="Senior Solutions Architect at GitLab. 14+ years in cloud architecture, 13 AWS certifications, 31 cloud badges & AWS Golden Jacket awardee.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://schinchli.github.io/shashank-chinchli-portfolio/">
+  <meta property="og:image" content="https://schinchli.github.io/shashank-chinchli-portfolio/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Shashank Chinchli">
+  <meta property="profile:first_name" content="Shashank">
+  <meta property="profile:last_name" content="Chinchli">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shashank Chinchli | Cloud Architect & AWS Community Leader">
+  <meta name="twitter:description" content="Senior Solutions Architect at GitLab. 14+ years in cloud, 13 AWS certifications & AWS Golden Jacket awardee.">
+  <meta name="twitter:image" content="https://schinchli.github.io/shashank-chinchli-portfolio/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,743 +50,796 @@
 
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
+
+  <!-- Structured Data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shashank Chinchli",
+    "url": "https://schinchli.github.io/shashank-chinchli-portfolio/",
+    "image": "https://schinchli.github.io/shashank-chinchli-portfolio/og-image.png",
+    "jobTitle": "Senior Solutions Architect",
+    "worksFor": { "@type": "Organization", "name": "GitLab" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Gujarat University" },
+    "award": "AWS Golden Jacket",
+    "nationality": "Indian",
+    "knowsAbout": [
+      "Cloud Architecture", "Amazon Web Services", "Cloud Security", "Generative AI",
+      "Amazon Bedrock", "DevSecOps", "Machine Learning", "Zero-Trust Security",
+      "Infrastructure as Code", "Agentic AI"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/shashankk/",
+      "https://www.credly.com/users/shashank-chinchli",
+      "https://builder.aws.com/community/@heyshashank",
+      "https://topmate.io/heyshashank/"
+    ]
+  }
+  </script>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+<body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#hero">SC</a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#milestones">Journey</a></li>
-          <li class="nav-item"><a class="nav-link" href="#credentials">Credentials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
-          <li class="nav-item"><a class="nav-link" href="#writing">Writing</a></li>
-          <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
-        </ul>
-      </div>
+  <!-- Skip to content (accessibility) -->
+  <a href="#hero" class="skip-link">Skip to content</a>
+
+  <!-- ===== MOBILE TOP BAR ===== -->
+  <header class="mobile-bar d-lg-none">
+    <a href="#hero" class="mobile-brand">SC</a>
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open navigation" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+  </header>
+
+  <!-- ===== SIDEBAR BACKDROP (mobile) ===== -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <!-- ===== LEFT SIDEBAR NAV ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="#hero" class="sidebar-monogram">SC</a>
+      <div class="sidebar-name">Shashank Chinchli</div>
+      <div class="sidebar-role">Sr. Solutions Architect · GitLab</div>
     </div>
-  </nav>
 
-  <!-- ===== HERO ===== -->
-  <section id="hero" class="hero-section">
-    <div class="hero-bg"></div>
-    <div class="container position-relative">
-      <div class="row align-items-center min-vh-100">
-        <div class="col-lg-8">
-          <p class="hero-greeting">Hi, I'm</p>
-          <h1 class="hero-name">Shashank<br>Chinchli</h1>
-          <p class="hero-title">Senior Solutions Architect at GitLab</p>
-          <p class="hero-subtitle">Cloud Architect &bull; AI/ML &bull; AWS Community Leader &bull; Technical Trainer</p>
-          <div class="hero-stats-row">
-            <div class="hero-stat-pill"><span class="stat-num">14+</span> Years Experience</div>
-            <div class="hero-stat-pill"><span class="stat-num">31</span> Cloud Badges</div>
-            <div class="hero-stat-pill"><span class="stat-num">13</span> AWS Certifications</div>
-            <div class="hero-stat-pill"><i class="bi bi-award-fill"></i> Golden Jacket</div>
-          </div>
-          <div class="hero-cta">
-            <a href="#talks" class="btn btn-primary-custom">Watch My Talks</a>
-            <a href="#connect" class="btn btn-outline-custom">Get In Touch</a>
-          </div>
-        </div>
-      </div>
+    <nav class="sidebar-nav" aria-label="Primary">
+      <a href="#hero" class="side-link"><i class="bi bi-house-door"></i> <span>Home</span></a>
+      <a href="#about" class="side-link"><i class="bi bi-person"></i> <span>About</span></a>
+      <a href="#experience" class="side-link"><i class="bi bi-briefcase"></i> <span>Experience</span></a>
+      <a href="#credentials" class="side-link"><i class="bi bi-patch-check"></i> <span>Credentials</span></a>
+      <a href="#talks" class="side-link"><i class="bi bi-camera-video"></i> <span>Talks</span></a>
+      <a href="#writing" class="side-link"><i class="bi bi-pencil-square"></i> <span>Writing</span></a>
+      <a href="#milestones" class="side-link"><i class="bi bi-signpost-split"></i> <span>Journey</span></a>
+      <a href="#connect" class="side-link"><i class="bi bi-envelope"></i> <span>Connect</span></a>
+    </nav>
+
+    <div class="sidebar-social">
+      <a href="https://www.linkedin.com/in/shashankk/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" aria-label="Credly"><i class="bi bi-patch-check-fill"></i></a>
+      <a href="https://builder.aws.com/community/@heyshashank" target="_blank" rel="noopener" aria-label="AWS Builder"><i class="bi bi-cloud-fill"></i></a>
+      <a href="https://topmate.io/heyshashank/" target="_blank" rel="noopener" aria-label="Topmate"><i class="bi bi-calendar-check-fill"></i></a>
+      <a href="mailto:schinchli@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
     </div>
-  </section>
+  </aside>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <h2 class="section-label">About</h2>
-      <div class="row g-5">
-        <div class="col-lg-6">
-          <h3 class="about-heading">Building secure, scalable cloud architectures for over a decade.</h3>
-          <p class="about-highlight">Top 1% quality contributor to Cloud Computing on LinkedIn &bull; 4M+ impressions &bull; Champion AWS Authorized Instructor</p>
-        </div>
-        <div class="col-lg-6">
-          <p class="about-text">With 14+ years of industry experience, I specialize in cloud architecture, security, AI/ML, and agentic AI development across AWS, Azure, and Google Cloud. I currently serve as a <strong>Senior Solutions Architect at GitLab</strong>, helping enterprises across India and the ASEAN region modernize their DevSecOps pipelines.</p>
-          <p class="about-text">Previously, I was an <strong>AWS Solutions Architect II</strong> and <strong>Champion Technical Trainer at AWS India</strong> (4.8/5.0 CSAT), where I trained hundreds of professionals on AWS technologies and earned the prestigious <strong>AWS Golden Jacket</strong> for holding all 13 AWS certifications.</p>
-          <p class="about-text">I've worked with Fortune 500 clients including <strong>HDFC, ICICI, Paytm, Barclays, Shell, Apple India, Novartis, Atlassian, Commonwealth Bank, PayU,</strong> and <strong>Fidelity</strong> — delivering cloud migrations, security architectures, and enterprise-scale solutions across BFSI, healthcare, and technology domains.</p>
-        </div>
-      </div>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="120" tabindex="0">
 
-      <div class="skills-section">
-        <h3 class="skills-title">Core Skills</h3>
-        <div class="skills-grid">
-          <span class="skill-tag">Cloud Architecture</span>
-          <span class="skill-tag">AWS Security</span>
-          <span class="skill-tag">Generative AI</span>
-          <span class="skill-tag">AI Agents</span>
-          <span class="skill-tag">Agentic AI</span>
-          <span class="skill-tag">Amazon Bedrock</span>
-          <span class="skill-tag">Infrastructure as Code</span>
-          <span class="skill-tag">DevSecOps</span>
-          <span class="skill-tag">Zero-Trust Security</span>
-          <span class="skill-tag">Container Orchestration</span>
-          <span class="skill-tag">Microservices</span>
-          <span class="skill-tag">Cloud Migration</span>
-          <span class="skill-tag">Machine Learning</span>
-          <span class="skill-tag">Serverless</span>
-          <span class="skill-tag">FinOps</span>
-          <span class="skill-tag">MERN / MEAN Stack</span>
-          <span class="skill-tag">BFSI Domain</span>
-          <span class="skill-tag">Technical Training</span>
-        </div>
-      </div>
-
-      <div class="row g-4 mt-3">
-        <div class="col-md-6">
-          <div class="about-info-card">
-            <h4><i class="bi bi-mortarboard-fill"></i> Education</h4>
-            <p><strong>BTech, Information Technology</strong><br>Gujarat University</p>
-            <p class="about-info-extra">Lean Six Sigma Green Belt</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="about-info-card">
-            <h4><i class="bi bi-translate"></i> Languages</h4>
-            <p><strong>Kannada</strong> (Native) &bull; <strong>English</strong> &bull; <strong>Hindi</strong> &bull; <strong>Gujarati</strong> &bull; <strong>Marathi</strong></p>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-9">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Shashank<br>Chinchli</h1>
+            <p class="hero-title">Senior Solutions Architect at GitLab</p>
+            <p class="hero-subtitle">Cloud Architect &bull; AI/ML &bull; AWS Community Leader &bull; Technical Trainer</p>
+            <div class="hero-stats-row">
+              <div class="hero-stat-pill"><span class="stat-num">14+</span> Years Experience</div>
+              <div class="hero-stat-pill"><span class="stat-num">31</span> Cloud Badges</div>
+              <div class="hero-stat-pill"><span class="stat-num">13</span> AWS Certifications</div>
+              <div class="hero-stat-pill"><i class="bi bi-award-fill"></i> Golden Jacket</div>
+            </div>
+            <div class="hero-cta">
+              <a href="#talks" class="btn btn-primary-custom">Watch My Talks</a>
+              <a href="#connect" class="btn btn-outline-custom">Get In Touch</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" class="section-padding section-dark">
-    <div class="container">
-      <h2 class="section-label section-label-light">Experience</h2>
-      <h3 class="milestones-heading">Last 5 years of professional journey</h3>
-
-      <div class="experience-grid">
-        <!-- GitLab -->
-        <div class="exp-card">
-          <div class="exp-header">
-            <div class="exp-company">GitLab</div>
-            <span class="exp-date">Jan 2026 – Present</span>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <h2 class="section-label">About</h2>
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <h3 class="about-heading">Building secure, scalable cloud architectures for over a decade.</h3>
+            <p class="about-highlight">Top 1% quality contributor to Cloud Computing on LinkedIn &bull; 4M+ impressions &bull; Champion AWS Authorized Instructor</p>
           </div>
-          <h4 class="exp-role">Senior Solutions Architect</h4>
-          <p class="exp-desc">Leading enterprise DevSecOps transformation across India and the ASEAN region. Enabling organizations to modernize their software development lifecycle through GitLab's comprehensive platform — covering CI/CD, security scanning, compliance, and AI-powered development workflows.</p>
-          <div class="exp-tags">
-            <span>DevSecOps</span>
-            <span>CI/CD</span>
-            <span>Enterprise Sales</span>
-            <span>APAC</span>
+          <div class="col-lg-6">
+            <p class="about-text">With 14+ years of industry experience, I specialize in cloud architecture, security, AI/ML, and agentic AI development across AWS, Azure, and Google Cloud. I currently serve as a <strong>Senior Solutions Architect at GitLab</strong>, helping enterprises across India and the ASEAN region modernize their DevSecOps pipelines.</p>
+            <p class="about-text">Previously, I was an <strong>AWS Solutions Architect II</strong> and <strong>Champion Technical Trainer at AWS India</strong> (4.8/5.0 CSAT), where I trained hundreds of professionals on AWS technologies and earned the prestigious <strong>AWS Golden Jacket</strong> for holding all 13 AWS certifications.</p>
+            <p class="about-text">I've worked with Fortune 500 clients including <strong>HDFC, ICICI, Paytm, Barclays, Shell, Apple India, Novartis, Atlassian, Commonwealth Bank, PayU,</strong> and <strong>Fidelity</strong> — delivering cloud migrations, security architectures, and enterprise-scale solutions across BFSI, healthcare, and technology domains.</p>
           </div>
         </div>
 
-        <!-- AWS SA II -->
-        <div class="exp-card">
-          <div class="exp-header">
-            <div class="exp-company">Amazon Web Services (AWS)</div>
-            <span class="exp-date">May 2024 – Jan 2026</span>
-          </div>
-          <h4 class="exp-role">Solutions Architect II</h4>
-          <p class="exp-desc">Designed and delivered cloud architecture solutions for enterprise customers across BFSI, healthcare, and technology sectors. Led well-architected reviews, migration assessments, and AI/ML workload designs for Fortune 500 clients including HDFC, Paytm, and Fidelity.</p>
-          <div class="exp-tags">
-            <span>Cloud Architecture</span>
-            <span>AI/ML</span>
-            <span>Well-Architected</span>
-            <span>Fortune 500</span>
-          </div>
-        </div>
-
-        <!-- AWS Technical Trainer -->
-        <div class="exp-card">
-          <div class="exp-header">
-            <div class="exp-company">Amazon Web Services (AWS)</div>
-            <span class="exp-date">Jul 2022 – May 2024</span>
-          </div>
-          <h4 class="exp-role">Technical Trainer</h4>
-          <p class="exp-desc">Trained hundreds of professionals on AWS technologies as a Champion Authorized Instructor (4.8/5.0 CSAT). Delivered instructor-led courses on cloud architecture, security, machine learning, and DevOps. Earned the AWS Golden Jacket for holding all 13 AWS certifications.</p>
-          <div class="exp-tags">
-            <span>Technical Training</span>
-            <span>4.8/5.0 CSAT</span>
-            <span>Golden Jacket</span>
-            <span>13 Certs</span>
+        <div class="skills-section">
+          <h3 class="skills-title">Core Skills</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Cloud Architecture</span>
+            <span class="skill-tag">AWS Security</span>
+            <span class="skill-tag">Generative AI</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Agentic AI</span>
+            <span class="skill-tag">Amazon Bedrock</span>
+            <span class="skill-tag">Infrastructure as Code</span>
+            <span class="skill-tag">DevSecOps</span>
+            <span class="skill-tag">Zero-Trust Security</span>
+            <span class="skill-tag">Container Orchestration</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Cloud Migration</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Serverless</span>
+            <span class="skill-tag">FinOps</span>
+            <span class="skill-tag">MERN / MEAN Stack</span>
+            <span class="skill-tag">BFSI Domain</span>
+            <span class="skill-tag">Technical Training</span>
           </div>
         </div>
 
-        <!-- KPMG -->
-        <div class="exp-card">
-          <div class="exp-header">
-            <div class="exp-company">KPMG India</div>
-            <span class="exp-date">Feb 2021 – Jul 2022</span>
+        <div class="row g-4 mt-3">
+          <div class="col-md-6">
+            <div class="about-info-card">
+              <h4><i class="bi bi-mortarboard-fill"></i> Education</h4>
+              <p><strong>BTech, Information Technology</strong><br>Gujarat University</p>
+              <p class="about-info-extra">Lean Six Sigma Green Belt</p>
+            </div>
           </div>
-          <h4 class="exp-role">Manager — Cloud Security Architect</h4>
-          <p class="exp-desc">Led cloud security architecture and posture management for enterprise clients including Barclays, Shell, and Novartis. Designed zero-trust security frameworks, identity management solutions, and compliance automation across multi-cloud environments (AWS, Azure, GCP).</p>
-          <div class="exp-tags">
-            <span>Cloud Security</span>
-            <span>Zero-Trust</span>
-            <span>Multi-Cloud</span>
-            <span>BFSI</span>
+          <div class="col-md-6">
+            <div class="about-info-card">
+              <h4><i class="bi bi-translate"></i> Languages</h4>
+              <p><strong>Kannada</strong> (Native) &bull; <strong>English</strong> &bull; <strong>Hindi</strong> &bull; <strong>Gujarati</strong> &bull; <strong>Marathi</strong></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== MILESTONES ===== -->
-  <section id="milestones" class="section-padding section-darker">
-    <div class="container">
-      <h2 class="section-label section-label-light">Journey</h2>
-      <h3 class="milestones-heading">Career milestones &amp; community highlights</h3>
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section-padding section-dark">
+      <div class="container">
+        <h2 class="section-label section-label-light">Experience</h2>
+        <h3 class="milestones-heading">Last 5 years of professional journey</h3>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Nov 2025</span>
-            <h4>AI for Bharat — Amazon Bedrock Workshop</h4>
-            <p>Led a hands-on workshop teaching developers to build AI content summarizers using Amazon Bedrock.</p>
+        <div class="experience-grid">
+          <!-- GitLab -->
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company">GitLab</div>
+              <span class="exp-date">Jan 2026 – Present</span>
+            </div>
+            <h4 class="exp-role">Senior Solutions Architect</h4>
+            <p class="exp-desc">Leading enterprise DevSecOps transformation across India and the ASEAN region. Enabling organizations to modernize their software development lifecycle through GitLab's comprehensive platform — covering CI/CD, security scanning, compliance, and AI-powered development workflows.</p>
+            <div class="exp-tags">
+              <span>DevSecOps</span>
+              <span>CI/CD</span>
+              <span>Enterprise Sales</span>
+              <span>APAC</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker highlight"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Mid 2025</span>
-            <h4>AWS Summit 2025 — Developer Lounge Speaker</h4>
-            <p>Presented at the AWS Summit Developer Lounge, sharing insights on cloud architecture and emerging AWS services.</p>
+
+          <!-- AWS SA II -->
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company">Amazon Web Services (AWS)</div>
+              <span class="exp-date">May 2024 – Jan 2026</span>
+            </div>
+            <h4 class="exp-role">Solutions Architect II</h4>
+            <p class="exp-desc">Designed and delivered cloud architecture solutions for enterprise customers across BFSI, healthcare, and technology sectors. Led well-architected reviews, migration assessments, and AI/ML workload designs for Fortune 500 clients including HDFC, Paytm, and Fidelity.</p>
+            <div class="exp-tags">
+              <span>Cloud Architecture</span>
+              <span>AI/ML</span>
+              <span>Well-Architected</span>
+              <span>Fortune 500</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Early 2025</span>
-            <h4>GitLab EPIC Conference &amp; Partner Leaders Summit APJ</h4>
-            <p>Participated in GitLab's flagship partner event across the Asia-Pacific-Japan region.</p>
+
+          <!-- AWS Technical Trainer -->
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company">Amazon Web Services (AWS)</div>
+              <span class="exp-date">Jul 2022 – May 2024</span>
+            </div>
+            <h4 class="exp-role">Technical Trainer</h4>
+            <p class="exp-desc">Trained hundreds of professionals on AWS technologies as a Champion Authorized Instructor (4.8/5.0 CSAT). Delivered instructor-led courses on cloud architecture, security, machine learning, and DevOps. Earned the AWS Golden Jacket for holding all 13 AWS certifications.</p>
+            <div class="exp-tags">
+              <span>Technical Training</span>
+              <span>4.8/5.0 CSAT</span>
+              <span>Golden Jacket</span>
+              <span>13 Certs</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker highlight"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2024</span>
-            <h4>AWS Community Day Mumbai — GenAI Security Talk</h4>
-            <p>Co-presented "Enhancing your Cloud Security Posture with GenAI" at AWS Community Day Mumbai.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker highlight"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Jan 2026</span>
-            <h4>Joined GitLab as Senior Solutions Architect</h4>
-            <p>Transitioned to leading enterprise DevSecOps transformation across India and the ASEAN region at GitLab.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker highlight"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">May 2024</span>
-            <h4>Promoted to AWS Solutions Architect II</h4>
-            <p>Designed cloud architecture solutions for Fortune 500 clients across BFSI, healthcare, and technology sectors.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Nov 2023</span>
-            <h4>AWS Community Day Vadodara — Security Lake</h4>
-            <p>Introduced Amazon Security Lake service to the community, covering centralized security data analytics.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker highlight"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Feb 2023</span>
-            <h4><i class="bi bi-award-fill" style="color: var(--sc-accent);"></i> AWS Golden Jacket Awardee</h4>
-            <p>Recognized by AWS for earning 13 certifications and demonstrating exceptional expertise across the entire AWS ecosystem. The Golden Jacket is awarded to a select few worldwide.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Sep 2022</span>
-            <h4>AWS Summit 2022 — Tech Builder Gym</h4>
-            <p>Participated in hands-on builder sessions and networking at the AWS Summit India.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Jul 2022 – May 2024</span>
-            <h4>Champion Technical Trainer — AWS India</h4>
-            <p>Trained hundreds of professionals on AWS technologies. Recognized as a Champion Authorized Instructor with 4.8/5.0 CSAT for exceptional training delivery.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Feb 2021</span>
-            <h4>Joined KPMG India as Cloud Security Architect</h4>
-            <p>Led cloud security posture management for enterprise clients including Barclays, Shell, and Novartis across multi-cloud environments.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Aug 2017</span>
-            <h4>First AWS Official Blog — Amazon Rekognition</h4>
-            <p>Published "Build Your Own Face Recognition Service Using Amazon Rekognition" on the AWS Machine Learning Blog.</p>
+
+          <!-- KPMG -->
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company">KPMG India</div>
+              <span class="exp-date">Feb 2021 – Jul 2022</span>
+            </div>
+            <h4 class="exp-role">Manager — Cloud Security Architect</h4>
+            <p class="exp-desc">Led cloud security architecture and posture management for enterprise clients including Barclays, Shell, and Novartis. Designed zero-trust security frameworks, identity management solutions, and compliance automation across multi-cloud environments (AWS, Azure, GCP).</p>
+            <div class="exp-tags">
+              <span>Cloud Security</span>
+              <span>Zero-Trust</span>
+              <span>Multi-Cloud</span>
+              <span>BFSI</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== CREDENTIALS ===== -->
-  <section id="credentials" class="section-padding">
-    <div class="container">
-      <h2 class="section-label">Credentials</h2>
-      <p class="section-intro">31 verified badges across AWS, Azure, Google Cloud, and industry certifications.</p>
+    <!-- ===== CREDENTIALS ===== -->
+    <section id="credentials" class="section-padding">
+      <div class="container">
+        <h2 class="section-label">Credentials</h2>
+        <p class="section-intro">31 verified badges across AWS, Azure, Google Cloud, and industry certifications.</p>
 
-      <!-- AWS Certifications -->
-      <div class="badge-category">
-        <h3 class="badge-category-title"><i class="bi bi-cloud-fill"></i> AWS Certifications <span class="badge-count">13</span></h3>
+        <!-- AWS Certifications -->
+        <div class="badge-category">
+          <h3 class="badge-category-title"><i class="bi bi-cloud-fill"></i> AWS Certifications <span class="badge-count">13</span></h3>
 
-        <h4 class="badge-subcategory">Professional &amp; Specialty</h4>
-        <div class="badge-grid">
-          <!-- Dec 2024 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-networking.png" alt="AWS Advanced Networking Specialty" loading="lazy">
-            <span>Advanced Networking</span>
-          </a>
-          <!-- Aug 2024 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-ml-specialty.png" alt="AWS Machine Learning Specialty" loading="lazy">
-            <span>Machine Learning Specialty</span>
-          </a>
-          <!-- Feb 2024 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-database.png" alt="AWS Database Specialty" loading="lazy">
-            <span>Database Specialty</span>
-          </a>
-          <!-- May 2023 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-devops-pro.png" alt="AWS DevOps Engineer Professional" loading="lazy">
-            <span>DevOps Engineer Professional</span>
-          </a>
-          <!-- Feb 2023 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-sa-pro.png" alt="AWS Solutions Architect Professional" loading="lazy">
-            <span>Solutions Architect Professional</span>
-          </a>
-          <!-- Aug 2021 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-security.png" alt="AWS Security Specialty" loading="lazy">
-            <span>Security Specialty</span>
-          </a>
-        </div>
-
-        <h4 class="badge-subcategory">Associate</h4>
-        <div class="badge-grid">
-          <!-- Oct 2024 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-ml-eng.png" alt="AWS Machine Learning Engineer Associate" loading="lazy">
-            <span>ML Engineer Associate</span>
-          </a>
-          <!-- Apr 2024 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-data-eng.png" alt="AWS Data Engineer Associate" loading="lazy">
-            <span>Data Engineer Associate</span>
-          </a>
-          <!-- Jan 2023 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-dev-assoc.png" alt="AWS Developer Associate" loading="lazy">
-            <span>Developer Associate</span>
-          </a>
-          <!-- Jul 2021 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-sysops.png" alt="AWS SysOps Administrator Associate" loading="lazy">
-            <span>SysOps Administrator</span>
-          </a>
-          <!-- Apr 2020 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-sa-assoc.png" alt="AWS Solutions Architect Associate" loading="lazy">
-            <span>Solutions Architect Associate</span>
-          </a>
-        </div>
-
-        <h4 class="badge-subcategory">Foundational</h4>
-        <div class="badge-grid">
-          <!-- Sep 2024 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-ai-practitioner.png" alt="AWS AI Practitioner" loading="lazy">
-            <span>AI Practitioner</span>
-          </a>
-          <!-- Apr 2020 -->
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
-            <img src="images/badges/aws-cloud-practitioner.png" alt="AWS Cloud Practitioner" loading="lazy">
-            <span>Cloud Practitioner</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- AWS Community Badges -->
-      <div class="badge-category">
-        <h3 class="badge-category-title"><i class="bi bi-people-fill"></i> AWS Community &amp; Knowledge <span class="badge-count">8</span></h3>
-        <div class="badge-grid">
-          <!-- Aug 2025 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-ai-foundational.png" alt="AWS AI Foundational L100" loading="lazy">
-            <span>AI Foundational (L100)</span>
-          </div>
-          <!-- Jul 2025 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-fsi-intermediate.png" alt="Financial Services Intermediate L200" loading="lazy">
-            <span>Financial Services (L200)</span>
-          </div>
-          <!-- May 2025 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-fsi-foundational.png" alt="Financial Services Foundational L100" loading="lazy">
-            <span>Financial Services (L100)</span>
-          </div>
-          <!-- Mar 2025 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-migration.png" alt="Migration Foundations" loading="lazy">
-            <span>Migration Foundations</span>
-          </div>
-          <!-- Oct 2024 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-ml-eng-early.png" alt="ML Engineer Early Adopter" loading="lazy">
-            <span>ML Engineer Early Adopter</span>
-          </div>
-          <!-- Sep 2024 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-ai-early.png" alt="AI Practitioner Early Adopter" loading="lazy">
-            <span>AI Practitioner Early Adopter</span>
-          </div>
-          <!-- May 2024 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-well-architected.png" alt="Well-Architected Proficient" loading="lazy">
-            <span>Well-Architected Proficient</span>
-          </div>
-          <!-- Mar 2024 -->
-          <div class="badge-item">
-            <img src="images/badges/aws-cloud-clubs.png" alt="Cloud Clubs Certified Instructor" loading="lazy">
-            <span>Cloud Clubs Instructor</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Microsoft Azure -->
-      <div class="badge-category">
-        <h3 class="badge-category-title"><i class="bi bi-microsoft"></i> Microsoft Azure <span class="badge-count">7</span></h3>
-        <div class="badge-grid">
-          <!-- May 2021 -->
-          <div class="badge-item">
-            <img src="images/badges/azure-sa-expert.png" alt="Azure Solutions Architect Expert" loading="lazy">
-            <span>Solutions Architect Expert</span>
-          </div>
-          <!-- May 2021 -->
-          <div class="badge-item">
-            <img src="images/badges/az-304.png" alt="AZ-304 Azure Architect Design" loading="lazy">
-            <span>AZ-304 Architect Design</span>
-          </div>
-          <!-- Apr 2021 -->
-          <div class="badge-item">
-            <img src="images/badges/azure-security-fundamentals.png" alt="Azure Security Fundamentals" loading="lazy">
-            <span>Security &amp; Identity</span>
-          </div>
-          <!-- Mar 2021 -->
-          <div class="badge-item">
-            <img src="images/badges/az-303.png" alt="AZ-303 Azure Architect Technologies" loading="lazy">
-            <span>AZ-303 Architect Tech</span>
-          </div>
-          <!-- Jan 2021 -->
-          <div class="badge-item">
-            <img src="images/badges/azure-data-fundamentals.png" alt="Azure Data Fundamentals" loading="lazy">
-            <span>Data Fundamentals</span>
-          </div>
-          <!-- Aug 2020 -->
-          <div class="badge-item">
-            <img src="images/badges/azure-admin.png" alt="Azure Administrator Associate" loading="lazy">
-            <span>Administrator Associate</span>
-          </div>
-          <!-- Aug 2020 -->
-          <div class="badge-item">
-            <img src="images/badges/azure-fundamentals.png" alt="Azure Fundamentals" loading="lazy">
-            <span>Azure Fundamentals</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Other Certifications -->
-      <div class="badge-category">
-        <h3 class="badge-category-title"><i class="bi bi-patch-check-fill"></i> Other Certifications <span class="badge-count">3</span></h3>
-        <div class="badge-grid">
-          <!-- Dec 2025 -->
-          <div class="badge-item">
-            <img src="images/badges/genai-leader.png" alt="Generative AI Leader Certification" loading="lazy">
-            <span>Generative AI Leader</span>
-          </div>
-          <!-- Dec 2025 -->
-          <div class="badge-item">
-            <img src="images/badges/gcp-cloud-digital-leader.png" alt="Google Cloud Digital Leader" loading="lazy">
-            <span>GCP Cloud Digital Leader</span>
-          </div>
-          <!-- Jul 2022 -->
-          <div class="badge-item">
-            <img src="images/badges/ccsk-v4.png" alt="Certificate of Cloud Security Knowledge v4" loading="lazy">
-            <span>CCSK v4 (CSA)</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="credly-link">
-        <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener">
-          View all verified badges on Credly <i class="bi bi-arrow-up-right"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TALKS & VIDEOS ===== -->
-  <section id="talks" class="section-padding section-dark">
-    <div class="container">
-      <h2 class="section-label section-label-light">Talks &amp; Workshops</h2>
-      <p class="section-intro section-intro-light">Conference sessions, community talks, and hands-on workshops on AWS security, cloud architecture, and generative AI.</p>
-
-      <div class="row g-4">
-        <!-- 1. New video — first -->
-        <div class="col-lg-6">
-          <div class="video-card">
-            <a href="https://www.youtube.com/watch?v=BY4YlxhSKr8" target="_blank" rel="noopener" class="video-thumb-link">
-              <div class="video-thumb">
-                <img src="https://img.youtube.com/vi/BY4YlxhSKr8/maxresdefault.jpg" alt="Amazon Bedrock AgentCore Workshop" loading="lazy">
-                <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
-              </div>
+          <h4 class="badge-subcategory">Professional &amp; Specialty</h4>
+          <div class="badge-grid">
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-networking.png" alt="AWS Advanced Networking Specialty certification badge" loading="lazy" width="80" height="80">
+              <span>Advanced Networking</span>
             </a>
-            <div class="video-info">
-              <span class="video-tag">Workshop</span>
-              <h4>Amazon Bedrock AgentCore — Hands-on Workshop</h4>
-              <p>Transform local AI agents into advanced cloud agents with deployment, security, and feature extension building blocks.</p>
-              <div class="video-meta">
-                <span><i class="bi bi-calendar3"></i> 2025</span>
-                <span><i class="bi bi-cpu"></i> GenAI + Agents</span>
-              </div>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-ml-specialty.png" alt="AWS Machine Learning Specialty certification badge" loading="lazy" width="80" height="80">
+              <span>Machine Learning Specialty</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-database.png" alt="AWS Database Specialty certification badge" loading="lazy" width="80" height="80">
+              <span>Database Specialty</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-devops-pro.png" alt="AWS DevOps Engineer Professional certification badge" loading="lazy" width="80" height="80">
+              <span>DevOps Engineer Professional</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-sa-pro.png" alt="AWS Solutions Architect Professional certification badge" loading="lazy" width="80" height="80">
+              <span>Solutions Architect Professional</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-security.png" alt="AWS Security Specialty certification badge" loading="lazy" width="80" height="80">
+              <span>Security Specialty</span>
+            </a>
+          </div>
+
+          <h4 class="badge-subcategory">Associate</h4>
+          <div class="badge-grid">
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-ml-eng.png" alt="AWS Machine Learning Engineer Associate certification badge" loading="lazy" width="80" height="80">
+              <span>ML Engineer Associate</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-data-eng.png" alt="AWS Data Engineer Associate certification badge" loading="lazy" width="80" height="80">
+              <span>Data Engineer Associate</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-dev-assoc.png" alt="AWS Developer Associate certification badge" loading="lazy" width="80" height="80">
+              <span>Developer Associate</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-sysops.png" alt="AWS SysOps Administrator Associate certification badge" loading="lazy" width="80" height="80">
+              <span>SysOps Administrator</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-sa-assoc.png" alt="AWS Solutions Architect Associate certification badge" loading="lazy" width="80" height="80">
+              <span>Solutions Architect Associate</span>
+            </a>
+          </div>
+
+          <h4 class="badge-subcategory">Foundational</h4>
+          <div class="badge-grid">
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-ai-practitioner.png" alt="AWS AI Practitioner certification badge" loading="lazy" width="80" height="80">
+              <span>AI Practitioner</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="badge-item">
+              <img src="images/badges/aws-cloud-practitioner.png" alt="AWS Cloud Practitioner certification badge" loading="lazy" width="80" height="80">
+              <span>Cloud Practitioner</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- AWS Community Badges -->
+        <div class="badge-category">
+          <h3 class="badge-category-title"><i class="bi bi-people-fill"></i> AWS Community &amp; Knowledge <span class="badge-count">8</span></h3>
+          <div class="badge-grid">
+            <div class="badge-item">
+              <img src="images/badges/aws-ai-foundational.png" alt="AWS AI Foundational L100 knowledge badge" loading="lazy" width="80" height="80">
+              <span>AI Foundational (L100)</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/aws-fsi-intermediate.png" alt="AWS Financial Services Intermediate L200 knowledge badge" loading="lazy" width="80" height="80">
+              <span>Financial Services (L200)</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/aws-fsi-foundational.png" alt="AWS Financial Services Foundational L100 knowledge badge" loading="lazy" width="80" height="80">
+              <span>Financial Services (L100)</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/aws-migration.png" alt="AWS Migration Foundations knowledge badge" loading="lazy" width="80" height="80">
+              <span>Migration Foundations</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/aws-ml-eng-early.png" alt="AWS ML Engineer Early Adopter badge" loading="lazy" width="80" height="80">
+              <span>ML Engineer Early Adopter</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/aws-ai-early.png" alt="AWS AI Practitioner Early Adopter badge" loading="lazy" width="80" height="80">
+              <span>AI Practitioner Early Adopter</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/aws-well-architected.png" alt="AWS Well-Architected Proficient badge" loading="lazy" width="80" height="80">
+              <span>Well-Architected Proficient</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/aws-cloud-clubs.png" alt="AWS Cloud Clubs Certified Instructor badge" loading="lazy" width="80" height="80">
+              <span>Cloud Clubs Instructor</span>
             </div>
           </div>
         </div>
 
-        <!-- 2. Nov 25, 2025 -->
-        <div class="col-lg-6">
-          <div class="video-card">
-            <a href="https://www.youtube.com/watch?v=6GJMoxCP5L4" target="_blank" rel="noopener" class="video-thumb-link">
-              <div class="video-thumb">
-                <img src="https://img.youtube.com/vi/6GJMoxCP5L4/maxresdefault.jpg" alt="Building a Content Summarizer Using Amazon Bedrock" loading="lazy">
-                <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
-              </div>
-            </a>
-            <div class="video-info">
-              <span class="video-tag">Workshop</span>
-              <h4>Building a Content Summarizer Using Amazon Bedrock</h4>
-              <p>AI for Bharat — Hands-on workshop teaching how to build AI applications with Amazon Bedrock.</p>
-              <div class="video-meta">
-                <span><i class="bi bi-clock"></i> 1h 15m</span>
-                <span><i class="bi bi-calendar3"></i> Nov 25, 2025</span>
-              </div>
+        <!-- Microsoft Azure -->
+        <div class="badge-category">
+          <h3 class="badge-category-title"><i class="bi bi-microsoft"></i> Microsoft Azure <span class="badge-count">7</span></h3>
+          <div class="badge-grid">
+            <div class="badge-item">
+              <img src="images/badges/azure-sa-expert.png" alt="Microsoft Azure Solutions Architect Expert certification badge" loading="lazy" width="80" height="80">
+              <span>Solutions Architect Expert</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/az-304.png" alt="Microsoft AZ-304 Azure Architect Design certification badge" loading="lazy" width="80" height="80">
+              <span>AZ-304 Architect Design</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/azure-security-fundamentals.png" alt="Microsoft Azure Security Fundamentals certification badge" loading="lazy" width="80" height="80">
+              <span>Security &amp; Identity</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/az-303.png" alt="Microsoft AZ-303 Azure Architect Technologies certification badge" loading="lazy" width="80" height="80">
+              <span>AZ-303 Architect Tech</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/azure-data-fundamentals.png" alt="Microsoft Azure Data Fundamentals certification badge" loading="lazy" width="80" height="80">
+              <span>Data Fundamentals</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/azure-admin.png" alt="Microsoft Azure Administrator Associate certification badge" loading="lazy" width="80" height="80">
+              <span>Administrator Associate</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/azure-fundamentals.png" alt="Microsoft Azure Fundamentals certification badge" loading="lazy" width="80" height="80">
+              <span>Azure Fundamentals</span>
             </div>
           </div>
         </div>
 
-        <!-- 3. 2024 -->
-        <div class="col-lg-6">
-          <div class="video-card">
-            <a href="https://www.youtube.com/watch?v=4xi_btH4LBw" target="_blank" rel="noopener" class="video-thumb-link">
-              <div class="video-thumb">
-                <img src="https://img.youtube.com/vi/4xi_btH4LBw/maxresdefault.jpg" alt="Enhancing AWS Security Posture with Generative AI" loading="lazy">
-                <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
+        <!-- Other Certifications -->
+        <div class="badge-category">
+          <h3 class="badge-category-title"><i class="bi bi-patch-check-fill"></i> Other Certifications <span class="badge-count">3</span></h3>
+          <div class="badge-grid">
+            <div class="badge-item">
+              <img src="images/badges/genai-leader.png" alt="Generative AI Leader certification badge" loading="lazy" width="80" height="80">
+              <span>Generative AI Leader</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/gcp-cloud-digital-leader.png" alt="Google Cloud Digital Leader certification badge" loading="lazy" width="80" height="80">
+              <span>GCP Cloud Digital Leader</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/ccsk-v4.png" alt="Certificate of Cloud Security Knowledge v4 badge" loading="lazy" width="80" height="80">
+              <span>CCSK v4 (CSA)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="credly-link">
+          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener">
+            View all verified badges on Credly <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TALKS & VIDEOS ===== -->
+    <section id="talks" class="section-padding section-dark">
+      <div class="container">
+        <h2 class="section-label section-label-light">Talks &amp; Workshops</h2>
+        <p class="section-intro section-intro-light">Conference sessions, community talks, and hands-on workshops on AWS security, cloud architecture, and generative AI.</p>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=BY4YlxhSKr8" target="_blank" rel="noopener" class="video-thumb-link">
+                <div class="video-thumb">
+                  <img src="https://img.youtube.com/vi/BY4YlxhSKr8/maxresdefault.jpg" alt="Amazon Bedrock AgentCore hands-on workshop video thumbnail" loading="lazy">
+                  <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+              </a>
+              <div class="video-info">
+                <span class="video-tag">Workshop</span>
+                <h4>Amazon Bedrock AgentCore — Hands-on Workshop</h4>
+                <p>Transform local AI agents into advanced cloud agents with deployment, security, and feature extension building blocks.</p>
+                <div class="video-meta">
+                  <span><i class="bi bi-calendar3"></i> 2025</span>
+                  <span><i class="bi bi-cpu"></i> GenAI + Agents</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=6GJMoxCP5L4" target="_blank" rel="noopener" class="video-thumb-link">
+                <div class="video-thumb">
+                  <img src="https://img.youtube.com/vi/6GJMoxCP5L4/maxresdefault.jpg" alt="Building a content summarizer using Amazon Bedrock workshop thumbnail" loading="lazy">
+                  <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+              </a>
+              <div class="video-info">
+                <span class="video-tag">Workshop</span>
+                <h4>Building a Content Summarizer Using Amazon Bedrock</h4>
+                <p>AI for Bharat — Hands-on workshop teaching how to build AI applications with Amazon Bedrock.</p>
+                <div class="video-meta">
+                  <span><i class="bi bi-clock"></i> 1h 15m</span>
+                  <span><i class="bi bi-calendar3"></i> Nov 25, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=4xi_btH4LBw" target="_blank" rel="noopener" class="video-thumb-link">
+                <div class="video-thumb">
+                  <img src="https://img.youtube.com/vi/4xi_btH4LBw/maxresdefault.jpg" alt="Enhancing AWS security posture with generative AI talk thumbnail" loading="lazy">
+                  <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+              </a>
+              <div class="video-info">
+                <span class="video-tag">Community Day</span>
+                <h4>Enhancing Your AWS Security Posture with Generative AI</h4>
+                <p>Integrating Generative AI with Security Lake for advanced threat analysis and security posture management.</p>
+                <div class="video-meta">
+                  <span><i class="bi bi-calendar3"></i> 2024</span>
+                  <span><i class="bi bi-geo-alt"></i> Mumbai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=5banQvHheMM" target="_blank" rel="noopener" class="video-thumb-link">
+                <div class="video-thumb">
+                  <img src="https://img.youtube.com/vi/5banQvHheMM/maxresdefault.jpg" alt="Security on the cloud series session 1 talk thumbnail" loading="lazy">
+                  <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+              </a>
+              <div class="video-info">
+                <span class="video-tag">Security Series</span>
+                <h4>Security on the Cloud — Series Session 1</h4>
+                <p>Overview of cloud security incidents, NIST and MITRE frameworks, and the AWS Shared Responsibility Model.</p>
+                <div class="video-meta">
+                  <span><i class="bi bi-calendar3"></i> Mar 11, 2023</span>
+                  <span><i class="bi bi-collection-play"></i> Series</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WRITING ===== -->
+    <section id="writing" class="section-padding">
+      <div class="container">
+        <h2 class="section-label">Writing</h2>
+        <p class="section-intro">Technical blog posts and guides published on AWS official channels and community platforms.</p>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a href="https://aws.plainenglish.io/build-secure-and-responsible-genai-with-guardrails-for-amazon-bedrock-01d112a49244" target="_blank" rel="noopener" class="blog-card">
+              <span class="blog-source">AWS in Plain English</span>
+              <h4>Build Secure GenAI with Guardrails for Amazon Bedrock</h4>
+              <p>Complete guide to building secure and responsible generative AI applications using Amazon Bedrock Guardrails.</p>
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Jan 11, 2026</span>
+                <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
               </div>
             </a>
-            <div class="video-info">
-              <span class="video-tag">Community Day</span>
-              <h4>Enhancing Your AWS Security Posture with Generative AI</h4>
-              <p>Integrating Generative AI with Security Lake for advanced threat analysis and security posture management.</p>
-              <div class="video-meta">
+          </div>
+          <div class="col-lg-4">
+            <a href="https://aws.plainenglish.io/how-to-use-aws-security-agent-for-automated-vulnerability-detection-and-remediation-cfdaef9af5b8" target="_blank" rel="noopener" class="blog-card">
+              <span class="blog-source">AWS in Plain English</span>
+              <h4>How to Use AWS Security Agent for Automated Vulnerability Detection</h4>
+              <p>Guide on the AWS Security Agent unveiled at re:Invent 2025 for automated vulnerability detection and remediation.</p>
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Dec 3, 2025</span>
+                <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="https://builder.aws.com/community/@heyshashank" target="_blank" rel="noopener" class="blog-card">
+              <span class="blog-source">AWS Builder Center</span>
+              <h4>How Did I Prepare for AWS Certified Solutions Architect Professional</h4>
+              <p>Personal preparation guide, study strategies, and tips for passing the AWS SA Professional certification exam.</p>
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Jan 26, 2025</span>
+                <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="https://www.linkedin.com/pulse/how-improve-security-posture-your-aws-cloud-shashank-chinchli" target="_blank" rel="noopener" class="blog-card">
+              <span class="blog-source">LinkedIn Article</span>
+              <h4>How to Improve the Security Posture of Your AWS Cloud Environment</h4>
+              <p>Strategies and best practices for strengthening security across your AWS infrastructure.</p>
+              <div class="blog-meta">
                 <span><i class="bi bi-calendar3"></i> 2024</span>
-                <span><i class="bi bi-geo-alt"></i> Mumbai</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Mar 11, 2023 -->
-        <div class="col-lg-6">
-          <div class="video-card">
-            <a href="https://www.youtube.com/watch?v=5banQvHheMM" target="_blank" rel="noopener" class="video-thumb-link">
-              <div class="video-thumb">
-                <img src="https://img.youtube.com/vi/5banQvHheMM/maxresdefault.jpg" alt="Security Series Session 1 - Overview of Security on the Cloud" loading="lazy">
-                <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
+                <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
               </div>
             </a>
-            <div class="video-info">
-              <span class="video-tag">Security Series</span>
-              <h4>Security on the Cloud — Series Session 1</h4>
-              <p>Overview of cloud security incidents, NIST and MITRE frameworks, and the AWS Shared Responsibility Model.</p>
-              <div class="video-meta">
-                <span><i class="bi bi-calendar3"></i> Mar 11, 2023</span>
-                <span><i class="bi bi-collection-play"></i> Series</span>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-card">
+              <span class="blog-source">AWS Official Blog</span>
+              <h4>Amazon Personalize Can Now Use 10X More Item Attributes</h4>
+              <p>Article about major improvements to Amazon Personalize service, enabling richer recommendation models.</p>
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Feb 6, 2020</span>
               </div>
             </div>
           </div>
+          <div class="col-lg-4">
+            <a href="https://aws.amazon.com/blogs/machine-learning/build-your-own-face-recognition-service-using-amazon-rekognition/" target="_blank" rel="noopener" class="blog-card">
+              <span class="blog-source">AWS Machine Learning Blog</span>
+              <h4>Build Your Own Face Recognition Service Using Amazon Rekognition</h4>
+              <p>Technical guide on creating face recognition services using Amazon Rekognition with DynamoDB and Lambda.</p>
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Aug 13, 2017</span>
+                <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== WRITING ===== -->
-  <section id="writing" class="section-padding">
-    <div class="container">
-      <h2 class="section-label">Writing</h2>
-      <p class="section-intro">Technical blog posts and guides published on AWS official channels and community platforms.</p>
+    <!-- ===== JOURNEY / MILESTONES ===== -->
+    <section id="milestones" class="section-padding section-darker">
+      <div class="container">
+        <h2 class="section-label section-label-light">Journey</h2>
+        <h3 class="milestones-heading">Career milestones &amp; community highlights</h3>
 
-      <div class="row g-4">
-        <!-- 1. Jan 11, 2026 -->
-        <div class="col-lg-4">
-          <a href="https://aws.plainenglish.io/build-secure-and-responsible-genai-with-guardrails-for-amazon-bedrock-01d112a49244" target="_blank" rel="noopener" class="blog-card">
-            <span class="blog-source">AWS in Plain English</span>
-            <h4>Build Secure GenAI with Guardrails for Amazon Bedrock</h4>
-            <p>Complete guide to building secure and responsible generative AI applications using Amazon Bedrock Guardrails.</p>
-            <div class="blog-meta">
-              <span><i class="bi bi-calendar3"></i> Jan 11, 2026</span>
-              <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker highlight"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2026</span>
+              <h4>Joined GitLab as Senior Solutions Architect</h4>
+              <p>Transitioned to leading enterprise DevSecOps transformation across India and the ASEAN region at GitLab.</p>
             </div>
-          </a>
-        </div>
-        <!-- 2. Dec 3, 2025 -->
-        <div class="col-lg-4">
-          <a href="https://aws.plainenglish.io/how-to-use-aws-security-agent-for-automated-vulnerability-detection-and-remediation-cfdaef9af5b8" target="_blank" rel="noopener" class="blog-card">
-            <span class="blog-source">AWS in Plain English</span>
-            <h4>How to Use AWS Security Agent for Automated Vulnerability Detection</h4>
-            <p>Guide on the AWS Security Agent unveiled at re:Invent 2025 for automated vulnerability detection and remediation.</p>
-            <div class="blog-meta">
-              <span><i class="bi bi-calendar3"></i> Dec 3, 2025</span>
-              <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2025</span>
+              <h4>AI for Bharat — Amazon Bedrock Workshop</h4>
+              <p>Led a hands-on workshop teaching developers to build AI content summarizers using Amazon Bedrock.</p>
             </div>
-          </a>
-        </div>
-        <!-- 3. Jan 26, 2025 -->
-        <div class="col-lg-4">
-          <a href="https://builder.aws.com/community/@heyshashank" target="_blank" rel="noopener" class="blog-card">
-            <span class="blog-source">AWS Builder Center</span>
-            <h4>How Did I Prepare for AWS Certified Solutions Architect Professional</h4>
-            <p>Personal preparation guide, study strategies, and tips for passing the AWS SA Professional certification exam.</p>
-            <div class="blog-meta">
-              <span><i class="bi bi-calendar3"></i> Jan 26, 2025</span>
-              <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker highlight"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Mid 2025</span>
+              <h4>AWS Summit 2025 — Developer Lounge Speaker</h4>
+              <p>Presented at the AWS Summit Developer Lounge, sharing insights on cloud architecture and emerging AWS services.</p>
             </div>
-          </a>
-        </div>
-        <!-- 4. 2024 -->
-        <div class="col-lg-4">
-          <a href="https://www.linkedin.com/pulse/how-improve-security-posture-your-aws-cloud-shashank-chinchli" target="_blank" rel="noopener" class="blog-card">
-            <span class="blog-source">LinkedIn Article</span>
-            <h4>How to Improve the Security Posture of Your AWS Cloud Environment</h4>
-            <p>Strategies and best practices for strengthening security across your AWS infrastructure.</p>
-            <div class="blog-meta">
-              <span><i class="bi bi-calendar3"></i> 2024</span>
-              <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Early 2025</span>
+              <h4>GitLab EPIC Conference &amp; Partner Leaders Summit APJ</h4>
+              <p>Participated in GitLab's flagship partner event across the Asia-Pacific-Japan region.</p>
             </div>
-          </a>
-        </div>
-        <!-- 5. Feb 6, 2020 -->
-        <div class="col-lg-4">
-          <div class="blog-card">
-            <span class="blog-source">AWS Official Blog</span>
-            <h4>Amazon Personalize Can Now Use 10X More Item Attributes</h4>
-            <p>Article about major improvements to Amazon Personalize service, enabling richer recommendation models.</p>
-            <div class="blog-meta">
-              <span><i class="bi bi-calendar3"></i> Feb 6, 2020</span>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker highlight"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">May 2024</span>
+              <h4>Promoted to AWS Solutions Architect II</h4>
+              <p>Designed cloud architecture solutions for Fortune 500 clients across BFSI, healthcare, and technology sectors.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker highlight"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024</span>
+              <h4>AWS Community Day Mumbai — GenAI Security Talk</h4>
+              <p>Co-presented "Enhancing your Cloud Security Posture with GenAI" at AWS Community Day Mumbai.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2023</span>
+              <h4>AWS Community Day Vadodara — Security Lake</h4>
+              <p>Introduced Amazon Security Lake service to the community, covering centralized security data analytics.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker highlight"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Feb 2023</span>
+              <h4><i class="bi bi-award-fill" style="color: var(--sc-accent);"></i> AWS Golden Jacket Awardee</h4>
+              <p>Recognized by AWS for earning 13 certifications and demonstrating exceptional expertise across the entire AWS ecosystem. The Golden Jacket is awarded to a select few worldwide.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Sep 2022</span>
+              <h4>AWS Summit 2022 — Tech Builder Gym</h4>
+              <p>Participated in hands-on builder sessions and networking at the AWS Summit India.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jul 2022 – May 2024</span>
+              <h4>Champion Technical Trainer — AWS India</h4>
+              <p>Trained hundreds of professionals on AWS technologies. Recognized as a Champion Authorized Instructor with 4.8/5.0 CSAT for exceptional training delivery.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Feb 2021</span>
+              <h4>Joined KPMG India as Cloud Security Architect</h4>
+              <p>Led cloud security posture management for enterprise clients including Barclays, Shell, and Novartis across multi-cloud environments.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Aug 2017</span>
+              <h4>First AWS Official Blog — Amazon Rekognition</h4>
+              <p>Published "Build Your Own Face Recognition Service Using Amazon Rekognition" on the AWS Machine Learning Blog.</p>
             </div>
           </div>
         </div>
-        <!-- 6. Aug 13, 2017 -->
-        <div class="col-lg-4">
-          <a href="https://aws.amazon.com/blogs/machine-learning/build-your-own-face-recognition-service-using-amazon-rekognition/" target="_blank" rel="noopener" class="blog-card">
-            <span class="blog-source">AWS Machine Learning Blog</span>
-            <h4>Build Your Own Face Recognition Service Using Amazon Rekognition</h4>
-            <p>Technical guide on creating face recognition services using Amazon Rekognition with DynamoDB and Lambda.</p>
-            <div class="blog-meta">
-              <span><i class="bi bi-calendar3"></i> Aug 13, 2017</span>
-              <span class="blog-arrow"><i class="bi bi-arrow-up-right"></i></span>
-            </div>
-          </a>
+      </div>
+    </section>
+
+    <!-- ===== CONNECT ===== -->
+    <section id="connect" class="section-padding section-dark">
+      <div class="container">
+        <h2 class="section-label section-label-light">Connect</h2>
+        <div class="connect-content">
+          <h3 class="connect-heading">Let's build something together.</h3>
+          <p class="connect-text">Whether it's a speaking engagement, collaboration, workshop, or just a conversation about cloud architecture — I'd love to hear from you.</p>
+          <div class="social-links">
+            <a href="mailto:schinchli@gmail.com" class="social-link">
+              <i class="bi bi-envelope-fill"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shashankk/" target="_blank" rel="noopener" class="social-link">
+              <i class="bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://topmate.io/heyshashank/" target="_blank" rel="noopener" class="social-link">
+              <i class="bi bi-calendar-check-fill"></i>
+              <span>Topmate</span>
+            </a>
+            <a href="https://builder.aws.com/community/@heyshashank" target="_blank" rel="noopener" class="social-link">
+              <i class="bi bi-cloud-fill"></i>
+              <span>AWS Builder</span>
+            </a>
+            <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="social-link">
+              <i class="bi bi-patch-check-fill"></i>
+              <span>Credly</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== CONNECT ===== -->
-  <section id="connect" class="section-padding section-dark">
-    <div class="container">
-      <h2 class="section-label section-label-light">Connect</h2>
-      <div class="connect-content">
-        <h3 class="connect-heading">Let's build something together.</h3>
-        <p class="connect-text">Whether it's a speaking engagement, collaboration, workshop, or just a conversation about cloud architecture — I'd love to hear from you.</p>
-        <div class="social-links">
-          <a href="mailto:schinchli@gmail.com" class="social-link">
-            <i class="bi bi-envelope-fill"></i>
-            <span>Email</span>
-          </a>
-          <a href="https://www.linkedin.com/in/shashankk/" target="_blank" rel="noopener" class="social-link">
-            <i class="bi bi-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://topmate.io/heyshashank/" target="_blank" rel="noopener" class="social-link">
-            <i class="bi bi-calendar-check-fill"></i>
-            <span>Topmate</span>
-          </a>
-          <a href="https://builder.aws.com/community/@heyshashank" target="_blank" rel="noopener" class="social-link">
-            <i class="bi bi-cloud-fill"></i>
-            <span>AWS Builder</span>
-          </a>
-          <a href="https://www.credly.com/users/shashank-chinchli" target="_blank" rel="noopener" class="social-link">
-            <i class="bi bi-patch-check-fill"></i>
-            <span>Credly</span>
-          </a>
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p>&copy; 2026 Shashank Chinchli. All rights reserved.</p>
+          <p class="footer-tagline">Cloud Architect &bull; Community Builder &bull; Lifelong Learner</p>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p>&copy; 2026 Shashank Chinchli. All rights reserved.</p>
-        <p class="footer-tagline">Cloud Architect &bull; Community Builder &bull; Lifelong Learner</p>
-      </div>
-    </div>
-  </footer>
+  </main>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
+    // ===== Mobile sidebar toggle =====
+    const sidebar   = document.getElementById('sidebar');
+    const backdrop  = document.getElementById('sidebarBackdrop');
+    const toggleBtn = document.getElementById('sidebarToggle');
 
-    // Smooth scroll for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
+    function openSidebar() {
+      sidebar.classList.add('open');
+      backdrop.classList.add('show');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+    }
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      backdrop.classList.remove('show');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+    toggleBtn.addEventListener('click', () =>
+      sidebar.classList.contains('open') ? closeSidebar() : openSidebar()
+    );
+    backdrop.addEventListener('click', closeSidebar);
+
+    // ===== Smooth scroll + active link =====
+    const sideLinks = document.querySelectorAll('.side-link');
+    sideLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        const target = document.querySelector(href);
         if (target) {
+          e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          const collapse = document.querySelector('.navbar-collapse');
-          if (collapse.classList.contains('show')) {
-            new bootstrap.Collapse(collapse).hide();
-          }
+          if (window.innerWidth < 992) closeSidebar();
         }
       });
+    });
+
+    // ===== Scrollspy via IntersectionObserver =====
+    const sections = document.querySelectorAll('main section[id]');
+    const linkFor  = id => document.querySelector('.side-link[href="#' + id + '"]');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          sideLinks.forEach(l => l.classList.remove('active'));
+          const active = linkFor(entry.target.id);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(s => observer.observe(s));
+
+    // ===== Scroll-to-top button =====
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('show', window.scrollY > 600);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
